@@ -3,11 +3,25 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "yarn lint --fix",
+      "yarn test"
+    ]
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "test": "vitest",
-    "preview": "vite preview"
+    "test": "vitest --no-watch",
+    "test:watch": "vitest",
+    "preview": "vite preview",
+    "prepare": "husky install",
+    "lint": "eslint src --max-warnings=0"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -28,7 +42,9 @@
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
+    "husky": "^8.0.0",
     "jsdom": "^21.1.0",
+    "lint-staged": "^13.1.2",
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "tailwindcss": "^3.2.7",
