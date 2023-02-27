@@ -1,0 +1,4 @@
+- configurar husky + lint-staged
+- Configurar tailwindcss
+- configurar tests
+- configurar rotas
