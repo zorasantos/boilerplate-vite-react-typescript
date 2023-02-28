@@ -1,5 +1,5 @@
-import { Heading } from "./components";
+import { RoutesTree } from "./router";
 
 export function App() {
-  return <Heading title="Boilerplate vite" />;
+  return <RoutesTree />;
 }

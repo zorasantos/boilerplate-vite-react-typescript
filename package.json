@@ -17,7 +17,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "test": "vitest --no-watch",
+    "test": "vitest --no-watch -- --bail",
     "test:watch": "vitest",
     "preview": "vite preview",
     "prepare": "husky install",
@@ -25,7 +25,8 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.2"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
