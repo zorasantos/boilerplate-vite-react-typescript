@@ -19,6 +19,7 @@
     "build": "tsc && vite build",
     "test": "vitest --no-watch -- --bail",
     "test:watch": "vitest",
+    "coverage": "vitest run --coverage",
     "preview": "vite preview",
     "prepare": "husky install",
     "lint": "eslint src --max-warnings=0"
