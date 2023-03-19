@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { FooPage } from "../views/FooPage";
-import { Page404 } from "../views/Page404";
+import { Page404 } from "~/views/Page404";
+import { FooPage } from "~/views/FooPage";
 
 export const RoutesTree = () => {
   return (
