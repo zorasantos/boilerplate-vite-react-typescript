@@ -22,7 +22,7 @@
     "coverage": "vitest run --coverage",
     "preview": "vite preview",
     "prepare": "husky install",
-    "lint": "eslint src --max-warnings=0"
+    "lint": "tsc --noEmit && eslint src/**/*.ts{,x} --max-warnings=0"
   },
   "dependencies": {
     "react": "^18.2.0",
